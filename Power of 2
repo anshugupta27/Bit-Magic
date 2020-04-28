@@ -1,0 +1,33 @@
+https://practice.geeksforgeeks.org/problems/power-of-2/0
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+#define int long long int 
+#define TRY_HARD ios_base::sync_with_stdio(false);  cin.tie(NULL);  cout.tie(NULL);
+using namespace std;
+ 
+
+signed main()
+ {
+	TRY_HARD ;
+	int t ;
+	cin >> t ;
+	while ( t-- )
+	{
+	    int n ;
+	    cin >> n ;
+	    if ( n == 0 )
+	    cout << "NO\n" ;
+	    else
+	    if ( !(n & (n-1) ))
+	    cout << "YES\n" ;
+	    else
+	    cout << "NO\n" ;
+	}
+	
+}
