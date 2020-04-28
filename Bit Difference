@@ -1,0 +1,23 @@
+https://practice.geeksforgeeks.org/problems/bit-difference/0
+
+
+#include<bits/stdc++.h>
+#define int long long int 
+#define TRY_HARD ios_base::sync_with_stdio(false);  cin.tie(NULL);  cout.tie(NULL);
+using namespace std;
+
+
+signed main()
+ {
+	TRY_HARD ;
+	int t ;
+	cin >> t ;
+	while ( t-- )
+	{
+	    int a , b ;
+	    cin >> a >> b ;
+	    int c = a xor b ;
+	    cout << __builtin_popcount ( c ) << endl ;
+	}
+	
+}
